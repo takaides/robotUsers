@@ -1,0 +1,23 @@
+{
+  "name": "robotusers",
+  "version": "0.0.1",
+  "description": "Using the attached data.js file, build an Express app that works as a directory of users in the file. You should use require to get the data from the data.js file. The amount of info each user has varies. Users with no job or company data are currently looking for work.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takaides/robotUsers.git"
+  },
+  "author": "Ben Taylor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takaides/robotUsers/issues"
+  },
+  "homepage": "https://github.com/takaides/robotUsers#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "mustache-express": "^1.2.5"
+  }
+}

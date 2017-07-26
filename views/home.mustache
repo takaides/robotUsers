@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>home</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <section class="wrapper">
+    {{#users}}
+      <div class="user">
+        <a href="/users/{{username}}"><img src={{avatar}}></a>
+        <h1>{{name}}</h1>
+        {{#job}}
+          <p>{{job}}, {{company}}</p>
+        {{/job}}
+        {{^job}}
+          <p class="jerb">Available for hire</p>
+        {{/job}}
+      </div>
+    {{/users}}
+  </section>
+</body>
+
+</html>
