@@ -10,20 +10,34 @@
 <body>
   <section class="wrapperV">
     <!-- significantly increase width -->
-    <div class="user">
+    <div class="userH">
       <!-- move picture, add border, set border radius to 50% -->
-      <a href="/users/{{username}}"><img src={{avatar}}></a>
-      <h1>{{name}}</h1>
-      <p>
-        {{#address.city}}{{address.city}}, {{/address.city}}
-        {{#address.state_or_province}}{{address.state_or_province}}, {{/address.state_or_province}}{{address.country}}
-      {{#job}} | {{job}}, {{company}}</p>{{/job}}
-      {{^job}}</p>  <p class="jerb">Available for hire</p>{{/job}}
-      <p>{{email}}</p>
-      <p>{{phone}}</p>
-      {{#university}}<h3>Education</h3><p>{{university}}</p>{{/university}}
-      <h3>Skills</h3>
-      <p>{{skills}}</p>
+      <div id="cardHeader">
+        <div>
+          <img src= {{avatar}}></a>
+        </div>
+        <div id="cardInfo">
+          <h1>{{name}}</h1>
+          <p>
+            {{#address.city}}{{address.city}}, {{/address.city}}
+            {{#address.state_or_province}}{{address.state_or_province}}, {{/address.state_or_province}}{{address.country}} |
+            {{#job}}{{job}}, {{company}}</p>
+          {{/job}}
+          {{^job}}
+          <div class="jerb inline">Available for hire</div></p>
+          {{/job}}
+          <p>{{email}} | {{phone}}</p>
+        </div>
+      </div>
+      <div>
+        {{#university}}
+          <h3 class="inline">Education</h3>
+          <p class="inline">{{university}}</p>
+        {{/university}}
+        <br>
+        <h3 class="inline">Skills</h3>
+        <p class="inline">{{skills}}</p>
+      </div>
     </div>
     <a href="/">Go Home</a>
   </section>

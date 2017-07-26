@@ -41,21 +41,46 @@ p {
   align-items: flex-start;
 }
 
-/*.userV {
+.userH {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 30vw;
+  width: 50vw;
   padding: .55em;
   border: 1px solid lightgrey;
   margin: 1vw;
   border-radius: .5em;
-}*/
+}
+
+#cardHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+.userH img {
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+}
+
+#cardInfo {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+#cardInfo > * {
+  text-align: left;
+  display: inline;
+}
 
 .user a {
   display: flex;
   justify-content: center;
   align-self: center;
+}
+.inline {
+  display:inline;
 }
 
 .user p {
